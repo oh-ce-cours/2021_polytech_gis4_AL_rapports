@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Fastpages Notebook Blog Post",
+            "title": "Article de test",
             "content": "A propos . Mon premier article de blog avec fastpages . import numpy as np import matplotlib.pyplot as plt . xs = np.linspace(-10, 10, 1000) ys = np.cos(xs ** 2) plt.plot(xs, ys) . [&lt;matplotlib.lines.Line2D at 0x16d7da79d30&gt;] .",
-            "url": "https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/data-science/2021/06/09/Untitled.html",
-            "relUrl": "/data-science/2021/06/09/Untitled.html",
+            "url": "https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/data-science/2021/06/09/er-article.html",
+            "relUrl": "/data-science/2021/06/09/er-article.html",
             "date": " • Jun 9, 2021"
         }
         
