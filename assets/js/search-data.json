@@ -3,6 +3,17 @@
     
         "post0": {
             "title": "Title",
+            "content": "Quels sont les facteurs de risques pouvant entraîner une prématurité chez les femmes enceintes? . from google.colab import files files.download(&#39;/content/photo-bebe.jpg&#39;) . Le but de ce projet était de créer un dashboard permettant de visualiser des données de notre choix. Celui-ci s&#39;est porté sur un jeu de données spécifique. Dans le cadre d’une étude sur les facteurs prénataux liés à un accouchement prématuré chez les femmes déjà en travail prématuré, on dispose de 13 variables explicatives sur 388 femmes incluses dans l&#39;étude. Les variables sont les suivantes : . from google.colab import files files.download(&#39;/content/Prema.png&#39;) . Nous avons crée une pop up sur notre application permettant d&#39;accéder au dictionnaire des données ci-dessus qui permettra d&#39;avoir des précisions sur les différentes variables ainsi que sur leurs modalités. . Ensuite, nous avons décidé de créer des filtres, nous permettant de choisir différentes modalités de certaines variables. Par exemple, comme présenté ci-dessous, nous avons décidé de filtrer les données en fonction d&#39;une grossesse prématurée ou non. Nous pourrons donc choisir d&#39;afficher la modalité Positif ou Négatif correspondant à la variable. Ensuite, nous pouvons également trier nos données en fonction du type de grossesse. Nous pourrons donc choisir si nous voulons affichier les données correspondant à une grossesse simple ou multiple. Enfin, les données peuvent être filtrées en fonction de si la femme enceinte présente des contractions ou pas. . from google.colab import files files.download(&#39;/content/Filtres.png&#39;) . Ensuite, nous pouvons également choisir l&#39;âge de la mère, à l&#39;aide d&#39;un curseur comme ci-dessous: . from google.colab import files files.download(&#39;/content/curseur_age.png&#39;) . Sur l&#39;image précédente, nous avons sélectionné les femmes enceintes agées entre 18 et 24 ans. . Ensuite, lorsque nous avons sélectionné les différents filtres voulus, nous pouvons choisir la variable que nous voulons afficher. Nous avons donc crée une liste déroulante comme ci-dessous: . from google.colab import files files.download(&#39;/content/curseur_age.png&#39;) . Si nous sélectionnons des filtres qui ne possèdent pas de données, nous avons affiché un message comme ci-dessous: . from google.colab import files files.download(&#39;/content/Aucune_donnee.png&#39;) . Au début de notre projet, nous avons rencontré quelques difficultés. Nous avons commencé à coder notre projet en flask, puis nous avons remarqué que c&#39;était plus compliqué et plus long. Nous avons donc décidé de passer en dash. .",
+            "url": "https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/16/prematures.html",
+            "relUrl": "/2021/06/16/prematures.html",
+            "date": " • Jun 16, 2021"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Title",
             "content": "test projet ! .",
             "url": "https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/16/Blog_projet_archi.html",
             "relUrl": "/2021/06/16/Blog_projet_archi.html",
