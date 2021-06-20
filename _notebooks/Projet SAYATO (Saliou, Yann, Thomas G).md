@@ -87,7 +87,7 @@ Le dernier élément de notre tableau de bord est un tableau qui affiche le dét
 
 ## Architecture du projet
 
-![Image de l'architecture du projet](images\architecture.png)
+![Image de l'architecture du projet](images/architecture.png)
 
 **Détail de l'architecture**
 
