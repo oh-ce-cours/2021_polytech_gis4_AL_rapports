@@ -16,7 +16,7 @@ L'objectif de notre projet était de proposer un tableau de bord en Dash tout en
 
 Pour choisir le jeu de données nous avons commencé par regarder quelles données étaient accessibles en temps réel et gratuitement. Il fallait aussi que ce soit des données mises à jour très fréquemment pour rendre notre tableau de bord plus intéressant. Nous sommes donc partis sur l'utilisation de données météorologiques. 
 
-![Image du logo d'Open Weather Map](./images/OpenWeatherMap.png)
+![Image du logo d'Open Weather Map]({{ site.baseurl }}/images/sayato/OpenWeatherMap.png)
 
 Le choix du fournisseur de données s'est porté sur Open Weather Map étant donné la gratuité du service mais aussi le nombre élevé de requêtes par minutes possible de faire sur leur API sans avoir à payer.
 
@@ -49,7 +49,7 @@ Concernant notre tabeau de bord, nous avions la volonté de faire une carte du m
 > @icon-info-circle De préférence ouvrir le localhost sur Chrome ou Edge pour que le projet soit entièrement fonctionnel (problème d'affichage du tableau sur Mozilla).
 
 > @icon-exclamation-circle Il est recommandé de créer votre propre compte sur https://openweathermap.org/ et de remplacer l'actuelle clé d'accès dans "config.ini" par votre clé d'accès (api=*numéro de clé d'accès*) si jamais cette erreur s'affiche :
-![Image erreur OpenWeather](images\erreurAPI.png)
+![Image erreur OpenWeather]({{ site.baseurl }}/images/sayato/erreurAPI.png)
 
 
 ## Utilisation
@@ -63,7 +63,7 @@ Plusieurs intéractions sont possibles avec la carte :
 -   Zoomer avec la molette pour avoir plus de détails sur la carte
 
 
-![GIF de l'utilisation de la carte](images/map.gif)
+![GIF de l'utilisation de la carte]({{ site.baseurl }}/images/sayato/map.gif)
 
 > @icon-info-circle La capitale séléctionnée apparait en rouge et s'affiche en bas de la carte.
 
@@ -77,17 +77,17 @@ Plusieurs interactions sont possibles avec le graphique de prévisions :
 -   Zoomer avec la molette pour avoir plus de précisions
 -   Sélectionner une zone du graphique sur laquelle zoomer avec une sélection via le clic droit de la souris
 
-![GIF de l'utilisation des indicateurs et prévisions](images/data.gif)
+![GIF de l'utilisation des indicateurs et prévisions]({{ site.baseurl }}/images/sayato/data.gif)
 
 **Tableau**
 
 Le dernier élément de notre tableau de bord est un tableau qui affiche le détail des prévisions des prochaines 48h pour la ville sélectionnée sur la carte. 
 
-![Image du tableau de prévisions](images/TableauPrevisions.png)
+![Image du tableau de prévisions]({{ site.baseurl }}/images/sayato/TableauPrevisions.png)
 
 ## Architecture du projet
 
-![Image de l'architecture du projet](images/architecture.png)
+![Image de l'architecture du projet]({{ site.baseurl }}/images/sayato/architecture.png)
 
 **Détail de l'architecture**
 
@@ -139,7 +139,7 @@ Le dernier élément de notre tableau de bord est un tableau qui affiche le dét
 
 **Cartographie des callbacks**
 
-![Image de la Cartographie des callbacks](images/callbacks.png)
+![Image de la Cartographie des callbacks]({{ site.baseurl }}/images/sayato/callbacks.png)
 
 
 **Exemple code : 'api.py'**
