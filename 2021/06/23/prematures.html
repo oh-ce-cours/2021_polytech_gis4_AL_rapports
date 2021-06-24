@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Title | fastpages</title>
+<title>Analyse de données de prématurés (Descout, Hourdeau, Petton) | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Analyse de données de prématurés (Descout, Hourdeau, Petton)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-23T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/23/prematures.html","@type":"BlogPosting","headline":"Title","dateModified":"2021-06-23T00:00:00-05:00","datePublished":"2021-06-23T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/23/prematures.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+{"url":"https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/23/prematures.html","@type":"BlogPosting","headline":"Analyse de données de prématurés (Descout, Hourdeau, Petton)","dateModified":"2021-06-23T00:00:00-05:00","datePublished":"2021-06-23T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/2021/06/23/prematures.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/2021_polytech_gis4_AL_rapports/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://oh-ce-cours.github.io/2021_polytech_gis4_AL_rapports/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/2021_polytech_gis4_AL_rapports/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,7 +71,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-23T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Analyse de données de prématurés (Descout, Hourdeau, Petton)</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-23T00:00:00-05:00" itemprop="datePublished">
         Jun 23, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -124,100 +124,13 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/photo-bebe.jpg&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-
-<div id="77458f17-3741-475a-8858-7b93d6e9c594"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#77458f17-3741-475a-8858-7b93d6e9c594');
-
-    async function download(id, filename, size) {
-      if (!google.colab.kernel.accessAllowed) {
-        return;
-      }
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      label.textContent = `Downloading "${filename}": `;
-      div.appendChild(label);
-      const progress = document.createElement('progress');
-      progress.max = size;
-      div.appendChild(progress);
-      document.body.appendChild(div);
-
-      const buffers = [];
-      let downloaded = 0;
-
-      const channel = await google.colab.kernel.comms.open(id);
-      // Send a message to notify the kernel that we're ready.
-      channel.send({})
-
-      for await (const message of channel.messages) {
-        // Send a message to notify the kernel that we're ready.
-        channel.send({})
-        if (message.buffers) {
-          for (const buffer of message.buffers) {
-            buffers.push(buffer);
-            downloaded += buffer.byteLength;
-            progress.value = downloaded;
-          }
-        }
-      }
-      const blob = new Blob(buffers, {type: 'application/binary'});
-      const a = document.createElement('a');
-      a.href = window.URL.createObjectURL(blob);
-      a.download = filename;
-      div.appendChild(a);
-      a.click();
-      div.remove();
-    }
-  
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-
-
-<div id="1192d459-f796-4b90-82b7-6842f26f0ebd"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#1192d459-f796-4b90-82b7-6842f26f0ebd');
-download("download_56773731-87fd-45a3-8f81-18aef3b93f6b", "photo-bebe.jpg", 106366)
-</script>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/photo-bebe.jpg" alt="Photo de bébé" /></p>
 
 </div>
 </div>
-
 </div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Le but de ce projet était de créer un dashboard permettant de visualiser des données de notre choix. Celui-ci s'est porté sur un jeu de données spécifique. Dans le cadre d’une étude sur les facteurs prénataux liés à un accouchement prématuré chez les femmes déjà en travail prématuré, on dispose de 13 variables explicatives sur 388 femmes incluses dans l'étude. Les variables sont les suivantes :</p>
@@ -225,100 +138,13 @@ download("download_56773731-87fd-45a3-8f81-18aef3b93f6b", "photo-bebe.jpg", 1063
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/Prema.png&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-
-<div id="40bf0f00-c54e-4423-8544-5625d659ea8f"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#40bf0f00-c54e-4423-8544-5625d659ea8f');
-
-    async function download(id, filename, size) {
-      if (!google.colab.kernel.accessAllowed) {
-        return;
-      }
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      label.textContent = `Downloading "${filename}": `;
-      div.appendChild(label);
-      const progress = document.createElement('progress');
-      progress.max = size;
-      div.appendChild(progress);
-      document.body.appendChild(div);
-
-      const buffers = [];
-      let downloaded = 0;
-
-      const channel = await google.colab.kernel.comms.open(id);
-      // Send a message to notify the kernel that we're ready.
-      channel.send({})
-
-      for await (const message of channel.messages) {
-        // Send a message to notify the kernel that we're ready.
-        channel.send({})
-        if (message.buffers) {
-          for (const buffer of message.buffers) {
-            buffers.push(buffer);
-            downloaded += buffer.byteLength;
-            progress.value = downloaded;
-          }
-        }
-      }
-      const blob = new Blob(buffers, {type: 'application/binary'});
-      const a = document.createElement('a');
-      a.href = window.URL.createObjectURL(blob);
-      a.download = filename;
-      div.appendChild(a);
-      a.click();
-      div.remove();
-    }
-  
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-
-
-<div id="125c10f0-050f-4dae-bb71-bc0117826f17"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#125c10f0-050f-4dae-bb71-bc0117826f17');
-download("download_31c1fb40-7573-4e80-ad7e-2b752bdf2597", "Prema.png", 94185)
-</script>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/Prema.png" alt="Table de données" /></p>
 
 </div>
 </div>
-
 </div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Nous avons crée une pop up sur notre application permettant d'accéder au dictionnaire des données ci-dessus qui permettra d'avoir des précisions sur les différentes variables ainsi que sur leurs modalités.</p>
@@ -333,100 +159,13 @@ download("download_31c1fb40-7573-4e80-ad7e-2b752bdf2597", "Prema.png", 94185)
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/Filtres.png&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-
-<div id="69b2e987-5eff-4ef0-9844-33bcb5d76177"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#69b2e987-5eff-4ef0-9844-33bcb5d76177');
-
-    async function download(id, filename, size) {
-      if (!google.colab.kernel.accessAllowed) {
-        return;
-      }
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      label.textContent = `Downloading "${filename}": `;
-      div.appendChild(label);
-      const progress = document.createElement('progress');
-      progress.max = size;
-      div.appendChild(progress);
-      document.body.appendChild(div);
-
-      const buffers = [];
-      let downloaded = 0;
-
-      const channel = await google.colab.kernel.comms.open(id);
-      // Send a message to notify the kernel that we're ready.
-      channel.send({})
-
-      for await (const message of channel.messages) {
-        // Send a message to notify the kernel that we're ready.
-        channel.send({})
-        if (message.buffers) {
-          for (const buffer of message.buffers) {
-            buffers.push(buffer);
-            downloaded += buffer.byteLength;
-            progress.value = downloaded;
-          }
-        }
-      }
-      const blob = new Blob(buffers, {type: 'application/binary'});
-      const a = document.createElement('a');
-      a.href = window.URL.createObjectURL(blob);
-      a.download = filename;
-      div.appendChild(a);
-      a.click();
-      div.remove();
-    }
-  
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-
-
-<div id="e89a9007-faa6-4132-a042-2c3c067e935a"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#e89a9007-faa6-4132-a042-2c3c067e935a');
-download("download_53e5a4cf-6da1-4cdd-a291-24d5d4ea4a8c", "Filtres.png", 33104)
-</script>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/filtres.png" alt="Filtres" /></p>
 
 </div>
 </div>
-
 </div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ensuite, nous pouvons également choisir l'âge de la mère, à l'aide d'un curseur comme ci-dessous:</p>
@@ -434,100 +173,13 @@ download("download_53e5a4cf-6da1-4cdd-a291-24d5d4ea4a8c", "Filtres.png", 33104)
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/curseur_age.png&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-
-<div id="99492548-cd1a-44a9-b897-71c96f9fe469"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#99492548-cd1a-44a9-b897-71c96f9fe469');
-
-    async function download(id, filename, size) {
-      if (!google.colab.kernel.accessAllowed) {
-        return;
-      }
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      label.textContent = `Downloading "${filename}": `;
-      div.appendChild(label);
-      const progress = document.createElement('progress');
-      progress.max = size;
-      div.appendChild(progress);
-      document.body.appendChild(div);
-
-      const buffers = [];
-      let downloaded = 0;
-
-      const channel = await google.colab.kernel.comms.open(id);
-      // Send a message to notify the kernel that we're ready.
-      channel.send({})
-
-      for await (const message of channel.messages) {
-        // Send a message to notify the kernel that we're ready.
-        channel.send({})
-        if (message.buffers) {
-          for (const buffer of message.buffers) {
-            buffers.push(buffer);
-            downloaded += buffer.byteLength;
-            progress.value = downloaded;
-          }
-        }
-      }
-      const blob = new Blob(buffers, {type: 'application/binary'});
-      const a = document.createElement('a');
-      a.href = window.URL.createObjectURL(blob);
-      a.download = filename;
-      div.appendChild(a);
-      a.click();
-      div.remove();
-    }
-  
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-
-
-
-<div id="e250dc43-603d-402e-bd24-eb021efec1df"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#e250dc43-603d-402e-bd24-eb021efec1df');
-download("download_0f38bfa5-c381-48df-9621-aa77c8796731", "curseur_age.png", 16749)
-</script>
-</div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/filtre_age.png" alt="Curseur age" /></p>
 
 </div>
 </div>
-
 </div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Sur l'image précédente, nous avons sélectionné les femmes enceintes agées entre 18 et 24 ans.</p>
@@ -542,24 +194,13 @@ download("download_0f38bfa5-c381-48df-9621-aa77c8796731", "curseur_age.png", 167
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/curseur_age.png&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/liste_choix_graphe.png" alt="Curseur age" /></p>
 
 </div>
-    
-
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Si nous sélectionnons des filtres qui ne possèdent pas de données, nous avons affiché un message comme ci-dessous:</p>
@@ -567,24 +208,13 @@ download("download_0f38bfa5-c381-48df-9621-aa77c8796731", "curseur_age.png", 167
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;/content/Aucune_donnee.png&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/2021_polytech_gis4_AL_rapports/images/copied_from_nb/./prematures_images/aucune_donnee.png" alt="Curseur age" /></p>
 
 </div>
-    
-
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Au début de notre projet, nous avons rencontré quelques difficultés. Nous avons commencé à coder notre projet en flask, puis nous avons remarqué que c'était plus compliqué et plus long. Nous avons donc décidé de passer en dash.</p>
