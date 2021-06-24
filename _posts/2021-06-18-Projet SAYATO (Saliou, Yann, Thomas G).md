@@ -16,7 +16,7 @@ L'objectif de notre projet était de proposer un tableau de bord en Dash tout en
 
 Pour choisir le jeu de données nous avons commencé par regarder quelles données étaient accessibles en temps réel et gratuitement. Il fallait aussi que ce soit des données mises à jour très fréquemment pour rendre notre tableau de bord plus intéressant. Nous sommes donc partis sur l'utilisation de données météorologiques. 
 
-![Image du logo d'Open Weather Map](images/OpenWeatherMap.png)
+![Image du logo d'Open Weather Map](./images/OpenWeatherMap.png)
 
 Le choix du fournisseur de données s'est porté sur Open Weather Map étant donné la gratuité du service mais aussi le nombre élevé de requêtes par minutes possible de faire sur leur API sans avoir à payer.
 
